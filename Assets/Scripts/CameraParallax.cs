@@ -28,6 +28,7 @@ public class CameraParallax : MonoBehaviour {
             farCamera.orthographic = false;
             farCamera.clearFlags = CameraClearFlags.SolidColor;
             farCamera.depth = -2;
+            farCamera.transparencySortMode = TransparencySortMode.Orthographic;
         }
 
         if(mainCamera != null)
@@ -45,6 +46,7 @@ public class CameraParallax : MonoBehaviour {
             nearCamera.orthographic = false;
             nearCamera.clearFlags = CameraClearFlags.Depth;
             nearCamera.depth = 0;
+            nearCamera.transparencySortMode = TransparencySortMode.Orthographic;
         }
     }
 
